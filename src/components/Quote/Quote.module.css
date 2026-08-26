@@ -1,0 +1,68 @@
+.quoteSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 112px;
+}
+
+.quoteBox {
+  position: relative;
+  border: 1px solid var(--text-gray);
+  padding: 32px;
+}
+
+.quoteText {
+  font-size: 24px;
+  color: var(--text-white);
+  font-weight: 500;
+  text-align: center;
+}
+
+.quoteMarkTop {
+  position: absolute;
+  top: -20px;
+  left: 16px;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text-gray);
+  background-color: var(--background);
+  padding: 0 8px;
+  line-height: 1;
+}
+
+.quoteMarkBottom {
+  position: absolute;
+  bottom: -20px;
+  right: 16px;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text-gray);
+  background-color: var(--background);
+  padding: 0 8px;
+  line-height: 1;
+}
+
+.authorBox {
+  border: 1px solid var(--text-gray);
+  border-top: none;
+  padding: 16px;
+  margin-left: auto;
+  margin-right: 0;
+  /* alignment trick because flex column center aligns the parent */
+  transform: translateX(100%);
+  position: relative;
+  left: -200px;
+}
+
+.authorText {
+  font-size: 24px;
+  color: var(--text-white);
+}
+
+@media (max-width: 768px) {
+  .authorBox {
+    transform: none;
+    left: 0;
+    align-self: flex-end;
+  }
+}

@@ -1,0 +1,111 @@
+.skillsSection {
+  margin-bottom: 112px;
+}
+
+.content {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.graphics {
+  flex: 1;
+  position: relative;
+  height: 300px;
+  display: none; /* Hide on smaller screens */
+}
+
+@media (min-width: 768px) {
+  .graphics {
+    display: block;
+  }
+}
+
+/* Graphic elements */
+.dots1 {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 60px;
+  height: 60px;
+  background-image: radial-gradient(var(--text-gray) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+.dots2 {
+  position: absolute;
+  bottom: 20%;
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  background-image: radial-gradient(var(--text-gray) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+.square1 {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  width: 80px;
+  height: 80px;
+  border: 1px solid var(--text-gray);
+}
+
+.square2 {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 100px;
+  height: 100px;
+  border: 1px solid var(--primary);
+}
+
+.square3 {
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  width: 80px;
+  height: 80px;
+  border: 1px solid var(--primary);
+}
+
+.skillsGrid {
+  flex: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-end;
+  align-content: flex-start;
+}
+
+.skillBox {
+  border: 1px solid var(--text-gray);
+  width: calc(33.333% - 16px);
+  min-width: 150px;
+  height: fit-content;
+}
+
+.skillTitle {
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--text-gray);
+  font-size: 16px;
+  color: var(--text-white);
+  font-weight: 600;
+}
+
+.skillList {
+  padding: 8px 16px;
+  color: var(--text-gray);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .skillsGrid {
+    width: 100%;
+    justify-content: center;
+  }
+}

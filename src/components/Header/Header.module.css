@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0;
+  margin-bottom: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: var(--text-white);
+}
+
+.logoIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoText {
+  font-size: 16px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav a {
+  font-size: 16px;
+}
+
+.hash {
+  color: var(--primary);
+}
+
+.langSwitch {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text-gray);
+  transition: color 0.3s ease;
+}
+
+.langSwitch:hover {
+  color: var(--text-white);
+}
+
+.langSwitch svg path {
+  transition: fill 0.3s ease;
+}
+
+.langSwitch:hover svg path {
+  fill: var(--text-white);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none; /* simple mobile hidden for now */
+  }
+}
