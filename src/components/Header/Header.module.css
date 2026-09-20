@@ -38,26 +38,31 @@
   color: var(--primary);
 }
 
-.langSwitch {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  cursor: pointer;
-  font-weight: 600;
+.resumeLink {
   color: var(--text-gray);
+  font-size: 16px;
   transition: color 0.3s ease;
 }
 
-.langSwitch:hover {
+.resumeLink:hover {
   color: var(--text-white);
 }
 
-.langSwitch svg path {
-  transition: fill 0.3s ease;
+.themeToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  color: var(--text-gray);
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.langSwitch:hover svg path {
-  fill: var(--text-white);
+.themeToggle:hover {
+  color: var(--primary);
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {

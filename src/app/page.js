@@ -8,6 +8,7 @@ import About from '../components/About/About';
 import Contacts from '../components/Contacts/Contacts';
 import Footer from '../components/Footer/Footer';
 import ChatBot from '../components/ChatBot/ChatBot';
+import Reveal from '../components/Reveal/Reveal';
 
 export default function Home() {
   return (
@@ -16,12 +17,12 @@ export default function Home() {
         <Header />
         <main>
           <Hero />
-          <Quote />
-          <Projects />
-          <CompetitiveProgramming />
-          <Skills />
-          <About />
-          <Contacts />
+          <Reveal><Quote /></Reveal>
+          <Reveal><Projects /></Reveal>
+          <Reveal><CompetitiveProgramming /></Reveal>
+          <Reveal><Skills /></Reveal>
+          <Reveal><About /></Reveal>
+          <Reveal><Contacts /></Reveal>
         </main>
       </div>
       <Footer />

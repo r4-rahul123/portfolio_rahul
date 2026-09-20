@@ -97,6 +97,12 @@
   padding: 8px 16px;
   color: var(--text-gray);
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.skillItem {
   line-height: 1.5;
 }
 

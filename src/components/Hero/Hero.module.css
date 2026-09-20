@@ -27,6 +27,12 @@
   margin-bottom: 24px;
 }
 
+.actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
 .btn {
   display: inline-block;
   padding: 8px 16px;
@@ -40,6 +46,33 @@
 
 .btn:hover {
   background: rgba(199, 120, 221, 0.1);
+}
+
+.btnSecondary {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid var(--border-color);
+  color: var(--text-white);
+  font-size: 16px;
+  cursor: pointer;
+  background: transparent;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.btnSecondary:hover {
+  border-color: var(--primary);
+  background: rgba(199, 120, 221, 0.1);
+}
+
+.cursor {
+  color: var(--primary);
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 .imageContainer {

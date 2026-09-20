@@ -6,27 +6,50 @@
 
 .imageContainer {
   border-bottom: 1px solid var(--text-gray);
-  height: 180px;
+  height: 200px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--card-bg);
 }
 
 .image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
 }
 
 .placeholderImage {
   width: 100%;
   height: 100%;
-  background-color: #333; /* Darker gray for placeholder */
+  background-color: var(--card-bg);
 }
 
 .tags {
   padding: 8px 16px;
   border-bottom: 1px solid var(--text-gray);
-  color: var(--text-gray);
-  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  background: rgba(199, 120, 221, 0.15);
+  color: var(--primary);
+  border: 1px solid rgba(199, 120, 221, 0.3);
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.tag:hover {
+  background: rgba(199, 120, 221, 0.3);
+  border-color: var(--primary);
+  color: var(--text-white);
 }
 
 .content {

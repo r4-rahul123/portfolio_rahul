@@ -1,6 +1,37 @@
 import styles from './Skills.module.css';
 import SectionHeader from '../SectionHeader/SectionHeader';
 
+const SKILL_CATEGORIES = [
+  {
+    title: 'Languages',
+    skills: ['Python', 'C++', 'C', 'Java', 'JavaScript', 'TypeScript', 'PHP', 'SQL']
+  },
+  {
+    title: 'Frontend & Backend',
+    skills: ['HTML', 'CSS', 'React', 'Redux', 'Tailwind CSS', 'Node.js', 'Express.js', 'Django', 'Next.js']
+  },
+  {
+    title: 'AI / Data Science',
+    skills: ['NumPy', 'Pandas', 'Matplotlib', 'Scikit-learn', 'TensorFlow', 'Jupyter']
+  },
+  {
+    title: 'Databases',
+    skills: ['MongoDB', 'MySQL', 'PostgreSQL']
+  },
+  {
+    title: 'Cloud & DevOps',
+    skills: ['AWS', 'GitHub Actions', 'CI/CD']
+  },
+  {
+    title: 'Tools',
+    skills: ['Git']
+  },
+  {
+    title: 'Soft Skills',
+    skills: ['Leadership', 'Event Management', 'Writing', 'Public Speaking', 'Time Management']
+  }
+];
+
 export default function Skills() {
   return (
     <section className={styles.skillsSection} id="skills">
@@ -15,26 +46,16 @@ export default function Skills() {
           <div className={styles.square3}></div>
         </div>
         <div className={styles.skillsGrid}>
-          <div className={styles.skillBox}>
-            <h3 className={styles.skillTitle}>Languages</h3>
-            <p className={styles.skillList}>Python PHP C++ C JavaScript SQL JAVA HTML CSS TypeScript</p>
-          </div>
-          <div className={styles.skillBox}>
-            <h3 className={styles.skillTitle}>Frameworks</h3>
-            <p className={styles.skillList}>React Redux TailwindCSS Scikit TensorFlow Django Node.js Express.js Next.js</p>
-          </div>
-          <div className={styles.skillBox}>
-            <h3 className={styles.skillTitle}>Tools</h3>
-            <p className={styles.skillList}>Pandas NumPy Matplotlib GIT PostgreSQL MySQL Jupyter</p>
-          </div>
-          <div className={styles.skillBox}>
-            <h3 className={styles.skillTitle}>Databases</h3>
-            <p className={styles.skillList}>MongoDB MySQL</p>
-          </div>
-          <div className={styles.skillBox}>
-            <h3 className={styles.skillTitle}>Soft Skills</h3>
-            <p className={styles.skillList}>Leadership Event Management Writing Public Speaking Time Management</p>
-          </div>
+          {SKILL_CATEGORIES.map((category) => (
+            <div className={styles.skillBox} key={category.title}>
+              <h3 className={styles.skillTitle}>{category.title}</h3>
+              <div className={styles.skillList}>
+                {category.skills.map((skill) => (
+                  <span key={skill} className={styles.skillItem}>{skill}</span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

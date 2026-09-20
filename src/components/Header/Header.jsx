@@ -1,4 +1,5 @@
 import styles from './Header.module.css';
+import ThemeToggle from './ThemeToggle';
 
 export default function Header() {
   return (
@@ -18,12 +19,10 @@ export default function Header() {
         <a href="#works"><span className={styles.hash}>#</span>works</a>
         <a href="#about-me"><span className={styles.hash}>#</span>about-me</a>
         <a href="#contacts"><span className={styles.hash}>#</span>contacts</a>
-        <div className={styles.langSwitch}>
-          EN
-          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M5 6L0 0H10L5 6Z" fill="var(--text-gray)"/>
-          </svg>
-        </div>
+        <a href="/resume.pdf" download target="_blank" rel="noreferrer" className={styles.resumeLink}>
+          <span className={styles.hash}>#</span>resume
+        </a>
+        <ThemeToggle />
       </nav>
     </header>
   );

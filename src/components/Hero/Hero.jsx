@@ -1,16 +1,28 @@
 import styles from './Hero.module.css';
+import Typewriter from './Typewriter';
 
 export default function Hero() {
   return (
     <section className={styles.hero} id="home">
       <div className={styles.content}>
         <h1 className={styles.title}>
-          Rahul is a <span className={styles.highlight}>web designer</span> and <br/> <span className={styles.highlight}>front-end developer</span>
+          Rahul is a <Typewriter />
         </h1>
         <p className={styles.description}>
           He crafts responsive websites where technologies meet creativity
         </p>
-        <a href="#contacts" className={styles.btn}>Contact me!!</a>
+        <div className={styles.actions}>
+          <a href="#contacts" className={styles.btn}>Contact me!!</a>
+          <a
+            href="/resume.pdf"
+            download
+            target="_blank"
+            rel="noreferrer"
+            className={styles.btnSecondary}
+          >
+            Download CV
+          </a>
+        </div>
       </div>
       <div className={styles.imageContainer}>
         {/* Placeholder image representation */}

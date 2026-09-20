@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rahul Kumar — Portfolio
 
-## Getting Started
+A modern, responsive Next.js portfolio showcasing work as a full-stack developer and competitive programmer.
 
-First, run the development server:
+## 🚀 Live Demo
+
+**AI Notes Generator**: [https://ai-notes-generator-omega.vercel.app/](https://ai-notes-generator-omega.vercel.app/)  
+**Source Code**: [GitHub](https://github.com/r4-rahul123/portfolio_rahul)
+
+## 🔧 Tech Stack
+
+- **Frontend**: React, Next.js, Tailwind CSS
+- **Backend**: Node.js, Express.js, Django
+- **AI/ML**: Gemini AI, TensorFlow, Scikit-learn
+- **Cloud & DevOps**: AWS, GitHub Actions, CI/CD
+- **Databases**: MongoDB, PostgreSQL, MySQL
+- **Competitive Programming**: LeetCode (DSA), Codeforces, CodeChef
+
+## ✨ Features
+
+- **AI Notes Generator** — Enterprise-grade AI study platform generating structured notes, MCQs, and Mermaid flowcharts from user prompts and PDFs
+- **Competitive Programming Showcase** — LeetCode, Codeforces, and CodeChef profiles with live links and platform-specific stats
+- **Skills Dashboard** — Categorized skill display (Languages, Frontend & Backend, AI/Data Science, Cloud & DevOps, Databases, Tools, Soft Skills) with modern badge design
+- **AI Chat Assistant** — Interactive chatbot powered by Gemini AI with keyword-based fallback
+- **Theme Toggle** — Dark/light mode support with persistent preferences
+- **Responsive Design** — Optimized for all screen sizes
+
+## 📦 Getting Started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the portfolio.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠️ Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev    # Start development server
+npm run build  # Build for production
+npm start      # Start production server
+npm run lint   # Run ESLint
+```
 
-## Learn More
+## 📄 Environment Variables
 
-To learn more about Next.js, take a look at the following resources:
+```
+GEMINI_API_KEY=your_gemini_api_key
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Email**: rahul9199140817@gmail.com
+- **LinkedIn**: [linkedin.com/in/rahul-kumar-20r123](https://linkedin.com/in/rahul-kumar-20r123)
+- **GitHub**: [r4-rahul123](https://github.com/r4-rahul123)
+- **LeetCode**: [r4rahul1_23](https://leetcode.com/u/r4rahul1_23/)
+- **Codeforces**: [r4_rahul123](https://codeforces.com/profile/r4_rahul123)
+- **CodeChef**: [r4rahul1_23](https://www.codechef.com/users/r4rahul1_23)

@@ -4,6 +4,22 @@
   --text-gray: #ABB2BF;
   --text-white: #FFFFFF;
   --border-color: #ABB2BF;
+  --card-bg: #1a1a1a;
+}
+
+/* Light theme overrides (toggled via next-themes data-theme="light") */
+[data-theme='light'] {
+  --background: #FFFFFF;
+  --primary: #A845C0;
+  --text-gray: #4B5563;
+  --text-white: #1F2430;
+  --border-color: #4B5563;
+  --card-bg: #f8f8f8;
+}
+
+/* Smooth theme switch */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 * {

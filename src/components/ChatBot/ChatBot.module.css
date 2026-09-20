@@ -7,6 +7,7 @@
 
 .chatFab {
   background-color: var(--primary);
+  color: var(--text-white);
   width: 60px;
   height: 60px;
   border-radius: 50%;

@@ -14,10 +14,9 @@ export default function Footer() {
                 </svg>
                 <span className={styles.logoText}>Rahul Kumar</span>
               </div>
-              <span className={styles.email}>rahul9199140817@gmail.com</span>
-            </div>
-            <p className={styles.desc}>Web designer and front-end developer</p>
-          </div>
+             <span className={styles.email}>rahul9199140817@gmail.com</span>
+           </div>
+         </div>
           <div className={styles.media}>
             <h4 className={styles.mediaTitle}>Media</h4>
             <div className={styles.mediaIcons}>
@@ -29,7 +28,7 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.bottom}>
-          <p>© Copyright {new Date().getFullYear()}. Made by Rahul Kumar</p>
+          <p suppressHydrationWarning>© Copyright {new Date().getFullYear()}. Made by Rahul Kumar</p>
         </div>
       </div>
     </footer>

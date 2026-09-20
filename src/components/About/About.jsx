@@ -14,7 +14,7 @@ export default function About() {
             I&apos;m a B.Tech Computer Science and Engineering student at IIITDM Jabalpur, India. I am a passionate developer with a strong foundation in problem-solving and software development.
           </p>
           <p className={styles.text}>
-            I love building scalable web applications and exploring fields like AI/ML. When I&apos;m not studying, I actively participate in competitive programming and contribute to tech events like Hackbyte 3.0.
+            I love building scalable web applications and exploring fields like AI/ML. When I&apos;m not studying, I actively participate in competitive programming and contribute to open-source and tech communities.
           </p>
           <a href="#" className={styles.btn}>Read more -&gt;</a>
         </div>
