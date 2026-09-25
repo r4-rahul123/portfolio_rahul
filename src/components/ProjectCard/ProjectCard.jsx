@@ -1,4 +1,5 @@
 import styles from './ProjectCard.module.css';
+import Image from 'next/image';
 
 // Treats "#" and empty values as non-links so we don't render dead anchors.
 const isRealLink = (href) => Boolean(href) && href !== '#';
@@ -14,7 +15,16 @@ export default function ProjectCard({ image, tags, title, description, liveLink,
     <div className={styles.card}>
       <div className={styles.imageContainer}>
         {image ? (
-          <img src={image} alt={`${title} project preview`} className={styles.image} loading="lazy" />
+          <Image
+            src={image}
+            alt={`${title} project preview`}
+            fill
+            className={styles.image}
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
+          />
         ) : (
           <div className={styles.placeholderImage} aria-hidden="true"></div>
         )}
