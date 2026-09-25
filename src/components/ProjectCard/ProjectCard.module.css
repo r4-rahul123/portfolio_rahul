@@ -12,11 +12,18 @@
   align-items: center;
   justify-content: center;
   background-color: var(--card-bg);
+  position: relative;
 }
 
 .image {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logoImage {
+  width: 80px;
+  height: 80px;
   object-fit: contain;
 }
 

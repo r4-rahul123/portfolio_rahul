@@ -35,7 +35,7 @@ export default function CompetitiveProgramming() {
       <SectionHeader title="competitive-programming" buttonText="View all profiles" buttonLink="#" />
       <div className={styles.grid}>
         {platforms.map((plat, index) => (
-          <ProjectCard key={index} {...plat} />
+          <ProjectCard key={index} {...plat} isLogo />
         ))}
       </div>
     </section>

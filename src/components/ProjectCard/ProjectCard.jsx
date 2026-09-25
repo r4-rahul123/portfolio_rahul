@@ -10,21 +10,25 @@ const externalProps = (href) =>
     ? { target: '_blank', rel: 'noopener noreferrer' }
     : {};
 
-export default function ProjectCard({ image, tags, title, description, liveLink, cacheLink, githubLink }) {
+export default function ProjectCard({ image, tags, title, description, liveLink, cacheLink, githubLink, isLogo }) {
   return (
     <div className={styles.card}>
       <div className={styles.imageContainer}>
         {image ? (
-          <Image
-            src={image}
-            alt={`${title} project preview`}
-            fill
-            className={styles.image}
-            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            loading="lazy"
-            placeholder="blur"
-            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
-          />
+          isLogo ? (
+            <img src={image} alt={`${title} logo`} className={styles.logoImage} loading="lazy" />
+          ) : (
+            <Image
+              src={image}
+              alt={`${title} project preview`}
+              fill
+              className={styles.image}
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
+            />
+          )
         ) : (
           <div className={styles.placeholderImage} aria-hidden="true"></div>
         )}
